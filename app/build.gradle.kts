@@ -18,11 +18,11 @@ detekt {
 
 dependencies {
 
-    implementation (Deps.Kotlin.stdlib)
-    implementation (Deps.Androidx.coreKtx)
-    implementation (Deps.Androidx.appcompat)
-    implementation (Deps.Google.material)
-    testImplementation (Deps.JunitJupiter.junit)
-    androidTestImplementation (Deps.Androidx.androidTestExt)
-    androidTestImplementation (Deps.Androidx.androidTestEspresso)
+    implementation(Deps.Kotlin.stdlib)
+    implementation(Deps.Androidx.coreKtx)
+    implementation(Deps.Androidx.appcompat)
+    implementation(Deps.Google.material)
+    testImplementation(Deps.JunitJupiter.junit)
+    androidTestImplementation(Deps.Androidx.androidTestExt)
+    androidTestImplementation(Deps.Androidx.androidTestEspresso)
 }
