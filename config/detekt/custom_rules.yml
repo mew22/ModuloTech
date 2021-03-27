@@ -1,0 +1,15 @@
+complexity:
+  active: true
+  LargeClass:
+    active: true
+    threshold: 400
+  StringLiteralDuplication:
+    active: true
+    threshold: 2
+    excludeStringsWithLessThan5Characters: false
+  TooManyFunctions:
+    active: true
+    thresholdInFiles: 20
+    thresholdInClasses: 20
+    thresholdInInterfaces: 20
+    thresholdInObjects: 20
