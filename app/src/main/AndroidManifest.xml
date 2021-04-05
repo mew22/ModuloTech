@@ -13,7 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Modulotech"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/Theme.Modulotech.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
