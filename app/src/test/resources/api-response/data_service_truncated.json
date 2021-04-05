@@ -1,0 +1,36 @@
+{
+	"devices": [
+		{
+			"id": 1,
+			"deviceName": "Lampe - Cuisine",
+			"intensity": 50,
+			"mode": "ON",
+			"productType": "Light"
+		},
+		{
+			"id": 2,
+			"deviceName": "Volet roulant - Salon",
+			"position": 70,
+			"productType": "RollerShutter"
+		},
+		{
+			"id": 3,
+			"deviceName": "Radiateur - Chambre",
+			"mode": "OFF",
+			"temperature": 20,
+			"productType": "Heater"
+		}
+	],
+	"user": {
+		"firstName": "John",
+		"lastName": "Doe",
+		"address": {
+			"city": "Issy-les-Moulineaux",
+			"postalCode": 92130,
+			"street": "rue Michelet",
+			"streetCode": "2B",
+			"country": "France"
+		},
+		"birthDate": 813766371000
+	}
+}
