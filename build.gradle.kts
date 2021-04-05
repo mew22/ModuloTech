@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+        maven { url = uri("https://artifactory.cronapp.io/public-release/") }
         google()
         jcenter()
     }
@@ -15,6 +16,7 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url = uri("https://artifactory.cronapp.io/public-release/") }
         google()
         jcenter()
     }
