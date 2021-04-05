@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">modulotech</string>
+    <string name="app_name" translatable="false">Modulotech</string>
+
+    <string name="profile_tab">Profile</string>
+    <string name="device_tab">Devices</string>
+
 </resources>
