@@ -1,0 +1,22 @@
+I would give some remarks on the test:
+
+- I set kotlin buildSrc to organize my dependencies and I add linter, coverage et documentation generation
+- I use MVVM pattern with some Kotlin features like Flows and Jetpack components like Livedata
+- I use Retrofit/Gson/OkHttp libs to fetch and parse the JSON data
+- I use Room database to cache my datas
+- I organize my code according to the Android Guide to app architecture on https://developer.android.com/jetpack/guide
+- I prefixed my private fields with 'm' as it is the convention used in AOSP projects and no naming conventions nor code rules has been enforced
+- I prefers use Flow instead of Livedata in the data layer because it is not platform specific and allow an easier threading management
+- I set insert conflict strategy to IGNORE to keep local data in case of conflicts and to REPLACE for update queries
+
+To my point of view, it would be cleaner to implement endpoints resources in a REST format like:
+/users   // get list of users
+/user/{id}  // get user profile
+/devices  // get list of devices type
+/user/{id}/devices // get list of devices for a user
+/user/{id}/device/{device_id} // get device profile for a user
+
+
+
+
+
