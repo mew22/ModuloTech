@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_tab">Profile</string>
+    <string name="device_tab">Appareils</string>
+
+    <string name="select_date">Selectionner une date</string>
+    <string name="first_name_hint">Prenom</string>
+    <string name="last_name_hint">Nom</string>
+    <string name="bithdate_hint">Date de naissance</string>
+    <string name="city_hint">Ville</string>
+    <string name="postal_code_hint">Code postal</string>
+    <string name="street_hint">Nom de la rue</string>
+    <string name="street_code_hint">Numero de la rue</string>
+    <string name="country_hint">Pays</string>
+    <string name="profile_field_error">Entrer au moins 2 caractères</string>
+    <string name="profile_postal_code_field_error">Format: 00000</string>
+    <string name="profile_street_code_field_error">Format: XX</string>
+
+    <string name="snackbar_undo">Annuler</string>
+    <string name="list_item_deleted">%1$s supprimé</string>
+
+    <string name="title_device_detail">Detail de l\'appareil</string>
+
+    <string name="profile_light_intensity_label">Gestion de l\'intensité</string>
+    <string name="profile_device_mode_switch_name">Mode</string>
+    <string name="profile_device_name_hint">Nom de l\'appareil</string>
+
+    <string name="profile_heater_temperature_label">Gestion de la temperature</string>
+
+    <string name="profile_shutter_position_label">Gestion de la position</string>
+</resources>
