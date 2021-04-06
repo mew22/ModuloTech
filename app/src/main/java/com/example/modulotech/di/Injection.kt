@@ -24,4 +24,8 @@ object Injection {
     fun provideSplashViewModelFactory(context: Context): ViewModelProvider.Factory {
         return SplashViewModelFactory(provideDataRepository(context))
     }
+
+    fun provideProfileViewModelFactory(context: Context): ViewModelProvider.Factory {
+        return ProfileViewModelFactory(provideDataRepository(context))
+    }
 }

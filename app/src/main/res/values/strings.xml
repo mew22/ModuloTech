@@ -4,4 +4,17 @@
     <string name="profile_tab">Profile</string>
     <string name="device_tab">Devices</string>
 
+    <string name="select_date">Select a date</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="bithdate_hint">Birthdate</string>
+    <string name="city_hint">City</string>
+    <string name="postal_code_hint">Postal code</string>
+    <string name="street_hint">Street name</string>
+    <string name="street_code_hint">Street code</string>
+    <string name="country_hint">Country</string>
+    <string name="profile_field_error">Enter at least 2 chars</string>
+    <string name="profile_postal_code_field_error">Format: 00000</string>
+    <string name="profile_street_code_field_error">Format: XX</string>
+
 </resources>

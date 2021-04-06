@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_banner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_profile_banner_height"
+    app:cardBackgroundColor="@color/purple_500"
+    app:cardCornerRadius="@dimen/card_profile_banner_radius"
+    app:cardElevation="@dimen/card_profile_banner_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile_picture"
+            android:layout_width="@dimen/card_profile_picture_size"
+            android:layout_height="@dimen/card_profile_picture_size"
+            android:padding="@dimen/card_profile_picture_padding"
+            android:elevation="@dimen/card_profile_picture_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:shapeAppearance="@style/circleImageView"
+            app:strokeWidth="@dimen/card_profile_picture_stroke_size"
+            app:strokeColor="@color/purple_200"
+            android:background="@android:color/white"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
