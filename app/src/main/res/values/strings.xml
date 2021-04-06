@@ -17,4 +17,7 @@
     <string name="profile_postal_code_field_error">Format: 00000</string>
     <string name="profile_street_code_field_error">Format: XX</string>
 
+    <string name="snackbar_undo">Undo</string>
+    <string name="list_item_deleted">%1$s deleted</string>
+
 </resources>

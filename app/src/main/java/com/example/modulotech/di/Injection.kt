@@ -28,4 +28,8 @@ object Injection {
     fun provideProfileViewModelFactory(context: Context): ViewModelProvider.Factory {
         return ProfileViewModelFactory(provideDataRepository(context))
     }
+
+    fun provideDeviceListViewModelFactory(context: Context): ViewModelProvider.Factory {
+        return DeviceListViewModelFactory(provideDataRepository(context))
+    }
 }
