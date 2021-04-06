@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="profile_light_intensity_slider_low" format="float" type="integer">0.0</item>
+    <item name="profile_light_intensity_slider_step" format="float" type="integer">1.0</item>
+    <item name="profile_light_intensity_slider_high" format="float" type="integer">100.0</item>
+
+    <item name="profile_heater_temperature_slider_low" format="float" type="integer">7.0</item>
+    <item name="profile_heater_temperature_slider_step" format="float" type="integer">0.5</item>
+    <item name="profile_heater_temperature_slider_high" format="float" type="integer">28.0</item>
+
+    <item name="profile_shutter_position_slider_angle" format="float" type="integer">270</item>
+    <item name="profile_shutter_position_slider_low" format="float" type="integer">0.0</item>
+    <item name="profile_shutter_position_slider_step" format="float" type="integer">1.0</item>
+    <item name="profile_shutter_position_slider_high" format="float" type="integer">100.0</item>
+</resources>

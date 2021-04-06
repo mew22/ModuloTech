@@ -25,6 +25,15 @@
         <activity
             android:name=".ui.MainActivity"
             android:theme="@style/Theme.Modulotech" />
+        <activity
+            android:name=".ui.device.detail.DeviceDetailActivity"
+            android:label="@string/title_device_detail"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/Theme.Modulotech">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.modulotech.ui.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

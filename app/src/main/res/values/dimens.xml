@@ -19,4 +19,8 @@
     <dimen name="list_elevation">10dp</dimen>
     <dimen name="chips_container_size">100dp</dimen>
 
+    <dimen name="profile_device_name_text_size">15sp</dimen>
+
+    <dimen name="profile_shutter_position_slider_size">250dp</dimen>
+    <dimen name="profile_shutter_position_slider_margin_bottom">150dp</dimen>
 </resources>

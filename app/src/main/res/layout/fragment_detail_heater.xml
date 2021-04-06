@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/profile_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_profile_banner_height"
+        android:layout_margin="@dimen/card_profile_banner_margin"
+        app:layout_constraintBottom_toTopOf="@+id/profile_infos_scroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/profile_infos_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_constraint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_banner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_profile_device_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/profile_text_margin"
+                android:hint="@string/profile_device_name_hint"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/profile_heater_mode_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_text_margin"
+                android:text="@string/profile_device_mode_switch_name"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/profile_text_margin"
+                android:textSize="@dimen/profile_device_name_text_size"
+                android:text="@string/profile_heater_temperature_label"
+                android:labelFor="@+id/profile_heater_temperature_slider"
+                />
+            <com.google.android.material.slider.Slider
+                android:id="@+id/profile_heater_temperature_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/profile_text_margin"
+                android:stepSize="@integer/profile_heater_temperature_slider_step"
+                android:valueFrom="@integer/profile_heater_temperature_slider_low"
+                android:valueTo="@integer/profile_heater_temperature_slider_high" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

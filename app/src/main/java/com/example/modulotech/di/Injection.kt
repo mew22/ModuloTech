@@ -32,4 +32,16 @@ object Injection {
     fun provideDeviceListViewModelFactory(context: Context): ViewModelProvider.Factory {
         return DeviceListViewModelFactory(provideDataRepository(context))
     }
+
+    fun provideLightDetailViewModelFactory(context: Context): ViewModelProvider.Factory {
+        return LightDetailViewModelFactory(provideDataRepository(context))
+    }
+
+    fun provideHeaterDetailViewModelFactory(context: Context): ViewModelProvider.Factory {
+        return HeaterDetailViewModelFactory(provideDataRepository(context))
+    }
+
+    fun provideShutterDetailViewModelFactory(context: Context): ViewModelProvider.Factory {
+        return RollerShutterDetailViewModelFactory(provideDataRepository(context))
+    }
 }

@@ -20,4 +20,13 @@
     <string name="snackbar_undo">Undo</string>
     <string name="list_item_deleted">%1$s deleted</string>
 
+    <string name="title_device_detail">Device Detail</string>
+
+    <string name="profile_light_intensity_label">Intensity management</string>
+    <string name="profile_device_mode_switch_name">Mode</string>
+    <string name="profile_device_name_hint">Device Name</string>
+
+    <string name="profile_heater_temperature_label">Temperature management</string>
+
+    <string name="profile_shutter_position_label">Position management</string>
 </resources>

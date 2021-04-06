@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/profile_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_profile_banner_height"
+        android:layout_margin="@dimen/card_profile_banner_margin"
+        app:layout_constraintBottom_toTopOf="@+id/et_profile_device_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_profile_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/profile_text_margin"
+        android:hint="@string/profile_device_name_hint"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_banner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/profile_shutter_position_slider_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/profile_text_margin"
+        android:layout_marginBottom="@dimen/profile_shutter_position_slider_margin_bottom"
+        android:labelFor="@+id/profile_shutter_position_slider"
+        android:text="@string/profile_shutter_position_label"
+        android:textSize="@dimen/profile_device_name_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/profile_shutter_position_slider"
+        android:layout_width="@dimen/profile_shutter_position_slider_size"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/profile_text_margin"
+        android:layout_marginBottom="@dimen/profile_shutter_position_slider_margin_bottom"
+        android:rotation="@integer/profile_shutter_position_slider_angle"
+        android:stepSize="@integer/profile_shutter_position_slider_step"
+        android:valueFrom="@integer/profile_shutter_position_slider_low"
+        android:valueTo="@integer/profile_shutter_position_slider_high"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
